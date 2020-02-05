@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require("path")
 
 /**
  * Configure your Gatsby site with this file.
@@ -8,25 +8,29 @@ const path = require('path');
 
 module.exports = {
   siteMetadata: {
-    title: 'Vijay Sehgal',
-    author: 'Vijay Sehgal',
-    siteUrl: `https://www.vijaysehgal.com`
+    title: "Vijay Sehgal",
+    author: "Vijay Sehgal",
+    siteUrl: `https://www.vijaysehgal.com`,
   },
   /* Your site config here */
   plugins: [
-    'gatsby-plugin-sass',
-    'gatsby-plugin-react-helmet',
+    "gatsby-plugin-sass",
+    "gatsby-plugin-react-helmet",
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'src',
-        path: `${__dirname}/src/`
-      }
+        name: "src",
+        path: `${__dirname}/src/`,
+      },
     },
-    'gatsby-transformer-remark',
-    `gatsby-transformer-sharp`, 
-    `gatsby-plugin-sharp`
-]
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: `src/images/portfolio.png`,
+      },
+    },
+    "gatsby-transformer-remark",
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+  ],
 }
-
-
