@@ -26,7 +26,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        icon: `src/images/portfolio.png`,
+        icon: `src/images/logo_transparent.png`,
       },
     },
     "gatsby-transformer-remark",

@@ -2,7 +2,7 @@
 
 A minimalist portfolio inspired from Dinesh Pandiyan personal Page
 
-### Config Notes
+### Config Notes 
 
 You need to create a .env.development file, with the following env:
 GATSBY_GRAPHQL_IDE=playground.
